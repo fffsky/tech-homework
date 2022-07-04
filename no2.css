@@ -67,11 +67,12 @@ h3 span {
 .wrapper {
     display: flex;
     align-items: center;
+    padding: 0;
 }
 .list {
   width: 30%;
   height: 225px;
-  margin: 0 8px;
+  margin: 0 auto;
   display: table;
   border-radius: 15px;
   background: linear-gradient(
@@ -127,17 +128,17 @@ h2 {
   .step1 {
     position: absolute;
     top: 13%;
-    left: 18%;
+    left: 13%;
   }
   .step2 {
     position: absolute;
     top: 42%;
-    left: 18%;
+    left: 13%;
   }
   .step3 {
     position: absolute;
     top: 71%;
-    left: 18%;
+    left: 13%;
   }
   /* チャート **************************************/
   .wrapper {
@@ -145,6 +146,6 @@ h2 {
   }
   .list {
     width: 80%;
-    margin: 15px 0px;
+    margin: 15px auto;
   }
 }
