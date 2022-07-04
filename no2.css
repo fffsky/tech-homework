@@ -1,0 +1,150 @@
+/* headerメニュー ******************************/
+header a {
+  margin-right: 15px;
+  font-size:  1.6rem;
+}
+
+html{
+  font-size: 62.5%;
+}
+body {
+    background-color: whitesmoke;
+}
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    text-align: center;
+    margin: 70px auto;
+    position: relative;
+}
+
+/* タイトル ******************************/
+h1 {
+  margin-bottom: 80px;
+  font-size: 3.0rem;
+}
+h3 {
+  letter-spacing: 1.5px;
+  color: gray;
+  font-size: 1.8rem;
+}
+h3 span {
+  color: red;
+}
+
+/* step *********************************/
+.chart {
+  display: flex;
+  align-items: center;
+}
+.step{
+  font-size: 1.6rem;
+}
+.num {
+  font-size: 5.0rem;
+  font-family: "Poppins", sans-serif;
+  margin:0 0 0 5px;
+}
+.step1 {
+  position: absolute;
+  top: 34%;
+  left: 6.5%;
+}
+.step2 {
+  position: absolute;
+  top: 34%;
+  left: 38.5%;
+}
+.step3 {
+  position: absolute;
+  top: 34%;
+  left: 69.5%;
+}
+/* チャート ******************************/
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+.list {
+  width: 30%;
+  height: 225px;
+  margin: 0 8px;
+  display: table;
+  border-radius: 15px;
+  background: linear-gradient(
+      45deg,
+      #d1f6ff 25%,
+      transparent 25%,
+      transparent 75%,
+      #d1f6ff 75%
+  ),
+  linear-gradient(
+      45deg,
+      #d1f6ff 25%,
+      transparent 25%,
+      transparent 75%,
+      #d1f6ff 75%
+  );
+  background-color: #e5f6f7;
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+h2 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2rem;
+}
+/* レスポンシブ切り替え ****************************/
+.pc {
+  display: block;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.sp {
+  display: none;
+}
+
+
+/* レスポンシブ対応 ******************************/
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+
+  /* タイトル ***********************************/
+  h1 {
+    margin-bottom: 58px;
+  }
+  /* step ***************************************/
+  .step1 {
+    position: absolute;
+    top: 13%;
+    left: 18%;
+  }
+  .step2 {
+    position: absolute;
+    top: 42%;
+    left: 18%;
+  }
+  .step3 {
+    position: absolute;
+    top: 71%;
+    left: 18%;
+  }
+  /* チャート **************************************/
+  .wrapper {
+    flex-direction: column;
+  }
+  .list {
+    width: 80%;
+    margin: 15px 0px;
+  }
+}
