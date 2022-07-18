@@ -1,8 +1,9 @@
 @charset "UTF-8";
 /* headerメニュー ******************************/
-header a {
-    margin-right: 15px;
-}
+header a{
+    display: block;
+    margin: 10px;
+  }
 /* main部分 ******************************/
 .css{
     width: 160px;
@@ -15,4 +16,11 @@ header a {
     margin: 10px 0 25px 50px;
     font-size: 20px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    header a{
+        display: block;
+        margin: 10px;
+    }
 }

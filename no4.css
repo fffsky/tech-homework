@@ -31,7 +31,7 @@ select{
   border-radius: 5px;
   border: 1px solid lightgray;
   margin: 5px 0 15px;
-  -webkit-appearance: auto;
+  -webkit-appearance: inner-spin-button;
 }
 form{
     width: 80%;
@@ -83,4 +83,17 @@ button{
 }
 .point p{
   line-height: 1.6;
+}
+@media screen and (max-width: 768px){
+  header a{
+    display: block;
+    margin: 10px;
+  }
+  .txt{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .txt p{
+    text-align: start;
+  }
 }

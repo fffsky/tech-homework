@@ -112,6 +112,10 @@ h2 {
 
 /* レスポンシブ対応 ******************************/
 @media screen and (max-width: 768px) {
+  header a{
+      display: block;
+      margin: 10px;
+  }
   .pc {
     display: none;
   }

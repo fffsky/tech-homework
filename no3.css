@@ -86,3 +86,11 @@ p{
   margin-left: 160px;
   padding-bottom: 30px;
 }
+
+/* レスポンシブ対応 ******************************/
+@media screen and (max-width: 768px) {
+  header a{
+      display: block;
+      margin: 10px;
+  }
+}
