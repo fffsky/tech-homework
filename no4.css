@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /* headerメニュー ******************************/
 header a {
-  margin-right: 15px;
+  margin: 15px;
+  font-size:  16px;
 }
 li {
     list-style: none;
@@ -31,7 +32,7 @@ select{
   border-radius: 5px;
   border: 1px solid lightgray;
   margin: 5px 0 15px;
-  -webkit-appearance: inner-spin-button;
+  -webkit-appearance: listbox;
 }
 form{
     width: 80%;
