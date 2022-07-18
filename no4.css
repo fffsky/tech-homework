@@ -1,0 +1,85 @@
+/* headerメニュー ******************************/
+header a {
+  margin-right: 15px;
+}
+li {
+    list-style: none;
+}
+.container {
+    max-width: 1000px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+/* 表題****************************************/
+.txt{
+  text-align: center;
+}
+.txt h1{
+    margin: 15px;
+    letter-spacing: 4px;
+}
+.txt p{
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+/* フォーム****************************************/
+select{
+  width: 105%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin: 5px 0 15px;
+  -webkit-appearance: auto;
+}
+form{
+    width: 80%;
+    margin: 45px auto 0;
+}
+form p{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  }
+form span{
+  background: #ff6347;
+  color: #fff;
+  padding: 3px 8px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin: 5px 0 15px;
+}
+textarea{
+    width: 100%;
+    height: 240px;
+    margin: 5px 0 15px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+/* ボタン****************************************/
+button{
+  background: #ff6347;
+  color: #fff;
+  padding: 3px 8px;
+  width: 100%;
+  border-radius: 35px;
+  border: 1px solid lightgray;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+/* 注意書き****************************************/
+.point{
+  width: 80%;
+  margin: 59px auto 0;
+}
+.point p{
+  line-height: 1.6;
+}

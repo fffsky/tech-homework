@@ -1,0 +1,87 @@
+/* headerメニュー ******************************/
+header a {
+  margin-right: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin-top: 150px;
+    position: relative;
+}
+/* background **********************************/
+.diamond {
+  background: #775497;
+  width: 230px;
+  height: 230px;
+  transform: rotate(45deg);
+  position: absolute;
+    top: 4%;
+    left: 14%;
+    z-index: 1;
+}
+.line {
+  transform: rotate(49deg);
+  transform-origin: 0% 0%;
+  width: 459px;
+  border: 0;
+  border-top: 1px solid #432163;
+  margin: -55px;
+  padding: 0px;
+  position: absolute;
+    top: -5%;
+    left: 33%;
+}
+.title{
+  font-size: 77px;
+  font-family: "Times New Roman", a-otf-ryumin-pr6n, "ヒラギノ明朝 ProN W3", sans-serif;
+  color: #DBD6DF;
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  z-index: 0;
+}
+/* main *****************************************/
+.wrapper{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.image{
+  margin-right: 63px;
+  /* text-align: end; */
+  z-index: 5;
+}
+.image img{
+  width: 217px;
+  margin-left: 100px;
+  padding-bottom: 30px;
+}
+.name{
+  border-left:1.5px solid #432163
+}
+h1{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: adobe-caslon-pro, serif;
+  color: #555555;
+  margin: 0  0 27px;
+  padding-top: 15px;
+}
+h2{
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Times New Roman", a-otf-ryumin-pr6n, "ヒラギノ明朝 ProN W3", sans-serif;
+  margin: 0 0 0 72px;
+  color: #555555;
+  position: relative;
+    z-index: 9999;
+}
+p{
+  font-size: 12px;
+  margin-left: 160px;
+  padding-bottom: 30px;
+}
