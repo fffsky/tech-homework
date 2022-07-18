@@ -22,7 +22,7 @@ li {
     letter-spacing: 4px;
 }
 .txt p{
-    line-height: 1.7;
+    line-height: 1.8;
     letter-spacing: 1px;
 }
 /* フォーム****************************************/
@@ -32,7 +32,6 @@ select{
   border-radius: 5px;
   border: 1px solid lightgray;
   margin: 5px 0 15px;
-  -webkit-appearance: listbox;
 }
 form{
     width: 80%;
@@ -83,7 +82,7 @@ button{
   margin: 59px auto 0;
 }
 .point p{
-  line-height: 1.6;
+  line-height: 1.8;
 }
 @media screen and (max-width: 768px){
   header a{
