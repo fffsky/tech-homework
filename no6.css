@@ -51,7 +51,7 @@ h2::before{
   font-size: 1.6rem;
   border: #333 2px solid;
   border-radius: 5px;
-  background-color: 	#FCDE26;
+  background-color: #FCDE26;
   padding: 5px 11px;
 }
 p{
@@ -67,7 +67,7 @@ span{
 @media screen and (max-width: 768px){
   header a{
     display: block;
-}
+  }
   .item-list{
     width: 80%;
   }
