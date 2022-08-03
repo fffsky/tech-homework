@@ -42,7 +42,6 @@ main{
 /* 全体を横並び */
 .form-wrapper{
   display: flex;
-  /* justify-content: center; */
   align-items: flex-start; /* 高さは上に統一*/
   width: 100%;
 
@@ -168,6 +167,8 @@ h3{
     flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 50px;
+    padding-left: 20px;
   }
     .contact{
     width: 100%;
@@ -179,14 +180,14 @@ h3{
   }
   .contact h2{
     font-size: 2.5rem;
-    text-align:start;
-    margin-left: 50px;
+    text-align:
+    start;
   }
   .contact h3{
     font-size: 1.6rem;
     margin-bottom: 30px;
-    text-align:start;
-    margin-left: 50px;
+    text-align:
+    start;
   }
   .contact-text{
     width: 100%;
@@ -194,8 +195,8 @@ h3{
   }
   .contact-text p{
     line-height: 1.8;
-        text-align:start;
-    margin-left: 50px;
+        text-align:
+    start;
   }
   /* リンク */
   .trial-download-link{
@@ -212,66 +213,27 @@ h3{
 }
 /* レスポンシブ対応************************************/
 @media screen and (max-width: 647px){
-  /* 全体 */
-  .form-wrapper{
-    flex-direction: column;
-  }
   /* トライアルとダウンロードのコンテンツ */
-  .trial-download{
-    width: 100%;
-  }
   .trial-download-item{
     flex-direction: column;
-    margin: 0 0 70px;
-  }
-  .trial-download-item:last-child{
-    margin: 0 0 70px;
   }
   .trial-download-title{
     width: 100%;
-    text-align:
-    start;
-    margin-bottom: 20px;
     margin-left: 0px;
   }
-  h2{
-    font-size: 2.5rem;
-  }
-  h3{
-    font-size: 1.6rem;
-  }
   /* コンタクト */
-  .contact{
-    width: 100%;
-  }
   .contact-wrapper{
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .contact-title{
-    width: 100%;
-    text-align: center;
-    margin: 0;
+  margin-left: 0;
   }
   .contact h2{
-    font-size: 2.5rem;
-    text-align:start;
     margin-left: 0px;
   }
   .contact h3{
-    font-size: 1.6rem;
-    margin-bottom: 30px;
-    text-align:start;
     margin-left: 0px;
-  }
-  .contact-text{
-    width: 100%;
-  text-align: center;
   }
   .contact-text p{
     line-height: 1.8;
-        text-align:start;
+    text-align:start;
     margin-left: 0px;
   }
   /* リンク */
