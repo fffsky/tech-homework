@@ -1,0 +1,283 @@
+@charset "UTF-8";
+html{
+  font-size: 62.5%;
+}
+body{
+  color: #fff;
+  margin: 0;
+}
+img{
+  width: 100%;
+}
+/* header部分 ******************************/
+header a {
+  margin: 15px;
+  font-size:  16px;
+  display: block;
+}
+li {
+    list-style: none;
+}
+/*************************************
+全体
+*************************************/
+/* 全体幅 */
+.container {
+    max-width: 1200px;
+    margin: 75px auto;
+    padding: 150px 50px;
+    background-color: rgba(0,0,0,0.4);
+    background-image: url(img/no7.jpg);
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+/*************************************
+メイン部分
+*************************************/
+/* 全体を横並び */
+.form-wrapper{
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start; /* 高さは上に統一*/
+  width: 100%;
+}
+/* 左右コンテンツの幅を指定 */
+.trial-download{
+  width: 50%;
+  border-right: 1px #fff solid;
+}
+.contact{
+  width: 50%;
+}
+
+
+/* トライアルとダウンロード部分の指定 */
+.trial-download-item{
+  display: flex;
+  align-items: center;
+  margin: 0 0 50px;
+}
+.trial-download-item:last-child{
+  margin: 0;
+}
+.trial-download-title{
+  width: 30%;
+  padding-left: 20px;
+}
+/* タイトル*/
+h2{ /*トライアル、ダウンロード */
+  font-size: 1.8rem;
+  margin: 0 0 5px;
+}
+.contact h2{ /*コンタクト*/
+  font-size: 2.0rem;
+  margin: 0 0 5px;
+}
+h3{
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+/* コンタクト部分の指定 */
+.contact-wrapper{ /*テキスト部分を左右*/
+  display: flex;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+/* テキストの幅と配置 */
+.contact-title{
+  width: 30%;
+  margin-left: 50px;
+}
+.contact-text{
+  width: 70%;
+}
+.contact-text p{
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+
+/* リンクの指定 */
+.trial-download-link{
+  width: 70%;
+}
+.contact-link{
+  width: 70%;
+  margin: 0 auto;
+}
+.link{
+  background-color:#F86350;
+  border-radius: 50px;
+  padding: 15px 0;
+  text-align: center;
+  margin-right: 50px;
+}
+.link a{
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+/* アイコン */
+.fa-solid{
+  margin-right: 7px;
+}
+/* レスポンシブ対応************************************/
+@media screen and (max-width: 1165px){
+  /* headerのリンク */
+  header a{
+    display: block;
+  }
+  /* 全体 */
+  .form-wrapper{
+    flex-direction: column;
+  }
+  /* トライアルとダウンロードのコンテンツ */
+  .trial-download{
+    width: 100%;
+    border: none;
+  }
+  .trial-download-item{
+    display: flex;
+    margin: 0 0 70px;
+  }
+  .trial-download-item:last-child{
+    margin: 0 0 70px;
+  }
+  .trial-download-title{
+    width: 30%;
+    text-align:
+    start;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  h3{
+    font-size: 1.6rem;
+  }
+  /* コンタクト部分 */
+  .contact-wrapper{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+    .contact{
+    width: 100%;
+  }
+  .contact-title{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .contact h2{
+    font-size: 2.5rem;
+    text-align:start;
+    margin-left: 50px;
+  }
+  .contact h3{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    text-align:start;
+    margin-left: 50px;
+  }
+  .contact-text{
+    width: 100%;
+  text-align: center;
+  }
+  .contact-text p{
+    line-height: 1.8;
+        text-align:start;
+    margin-left: 50px;
+  }
+  /* リンク */
+  .trial-download-link{
+    width: 70%;
+  }
+  .contact-link{
+    width: 80%;
+  }
+  .link{
+    margin: 0;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+/* レスポンシブ対応************************************/
+@media screen and (max-width: 647px){
+  /* 全体 */
+  .form-wrapper{
+    flex-direction: column;
+  }
+  /* トライアルとダウンロードのコンテンツ */
+  .trial-download{
+    width: 100%;
+  }
+  .trial-download-item{
+    flex-direction: column;
+    margin: 0 0 70px;
+  }
+  .trial-download-item:last-child{
+    margin: 0 0 70px;
+  }
+  .trial-download-title{
+    width: 100%;
+    text-align:
+    start;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  h3{
+    font-size: 1.6rem;
+  }
+  /* コンタクト */
+  .contact{
+    width: 100%;
+  }
+  .contact-wrapper{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-title{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .contact h2{
+    font-size: 2.5rem;
+    text-align:start;
+    margin-left: 0px;
+  }
+  .contact h3{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    text-align:start;
+    margin-left: 0px;
+  }
+  .contact-text{
+    width: 100%;
+  text-align: center;
+  }
+  .contact-text p{
+    line-height: 1.8;
+        text-align:start;
+    margin-left: 0px;
+  }
+  /* リンク */
+  .trial-download-link{
+    width: 100%;
+  }
+  .contact-link{
+    width: 100%;
+  }
+  .link{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 85%;
+  }
+}

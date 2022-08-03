@@ -3,6 +3,7 @@
 header a {
   margin: 15px;
   font-size:  16px;
+    display: block;
 }
 li {
     list-style: none;
