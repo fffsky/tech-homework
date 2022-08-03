@@ -22,14 +22,19 @@ li {
 全体
 *************************************/
 /* 全体幅 */
+main{
+  background-image: url(img/no7.jpg);
+  background-position: center center;
+  background-repeat:no-repeat;
+}
+.mask{
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
 .container {
     max-width: 1200px;
     margin: 75px auto;
-    padding: 150px 50px;
-    background-color: rgba(0,0,0,0.4);
-    background-image: url(img/no7.jpg);
-    background-position: center center;
-    background-repeat:no-repeat;
+    padding: 150px 35px;
 }
 /*************************************
 メイン部分
@@ -40,6 +45,7 @@ li {
   /* justify-content: center; */
   align-items: flex-start; /* 高さは上に統一*/
   width: 100%;
+
 }
 /* 左右コンテンツの幅を指定 */
 .trial-download{
