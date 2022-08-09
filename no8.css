@@ -38,22 +38,33 @@ li{
   padding-left: 20px;
 }
 .title-text h1{
-  font-size: 3.0rem;
+  font-size: 4rem;
+  margin-bottom: 0;
+  letter-spacing: 4px;
 }
 .title-text p{
   font-size: 1.6rem;
+  color: gray;
+  line-height: 1.7;
+  margin-top: 10px;
 }
 .select select{
   background-color: #F0F1F2;
-  margin: 30px 0 30px 20px;
+  margin: 30px 0 30px 100px;
   padding: 13px 22px 13px 12px;
-  width: 340px;
+  width: 320px;
   border-radius: 10px;
   border: none;
   font-weight: bold;
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+}
+select::-ms-expand {
+  display: block;
 }
 .card-list{
   display: flex;
+  margin-left: 80px;
 }
 .card{
   width: 27%;
@@ -68,13 +79,15 @@ li{
   border-radius: 15px 15px 0 0;
 }
 .date{
-  font-size: 1.6rem;
-  margin: 20px 20px 10px;
+  font-size: 1.3rem;
+  margin: 20px 25px 10px;
+  font-weight: bold;
+  color: #535556;
 }
 .txt{
   font-size: 1.7rem;
   font-weight: bold;
-  margin: 0 20px;
+  margin: 0 25px;
 }
 /* レスポンシブ対応************************************/
 @media screen and (max-width: 765px){
@@ -83,6 +96,9 @@ li{
     display: block;
   }
   /* メイン */
+  .sp{
+    display: none;
+  }
   .title-text{
     padding-left: 10px;
     padding-bottom: 15px;
@@ -99,6 +115,7 @@ li{
   }
   .card-list{
     flex-direction: column;
+    margin-left: 0;
   }
   .card{
     width: 80%;
