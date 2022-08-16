@@ -1,35 +1,31 @@
 @charset "UTF-8";
 html{
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
-body{
-  color: #fff;
-  margin: 0;
+body {
+    margin: 0;
+}
+body p{
+    color: #fff;
+    font-size: 1.6rem;
 }
 img{
-  width: 100%;
+    width: 100%;
 }
-/* header部分 ******************************/
-header a {
-  margin: 15px;
-  font-size:  16px;
-  display: block;
+
+/* header部分 *********************************/
+header p{
+    margin: 10px;
 }
-li {
-    list-style: none;
-}
-/*************************************
-全体
-*************************************/
-/* 全体幅 */
+
+/* main部分 ***********************************/
 main{
   background-image: url(img/no7.jpg);
   background-position: center center;
   background-repeat:no-repeat;
 }
 .mask{
-  width: 100%;
-  background-color: rgba(0,0,0,0.4);
+  backdrop-filter:brightness(0.5);
 }
 .container {
     max-width: 1200px;
@@ -55,7 +51,6 @@ main{
   width: 50%;
 }
 
-
 /* トライアルとダウンロード部分の指定 */
 .trial-download-item{
   display: flex;
@@ -73,6 +68,7 @@ main{
 h2{ /*トライアル、ダウンロード */
   font-size: 1.8rem;
   margin: 0 0 5px;
+  color: #fff;
 }
 .contact h2{ /*コンタクト*/
   font-size: 2.0rem;
@@ -81,6 +77,7 @@ h2{ /*トライアル、ダウンロード */
 h3{
   font-size: 1.3rem;
   margin: 0;
+  color: #fff;
 }
 
 /* コンタクト部分の指定 */
@@ -129,10 +126,6 @@ h3{
 }
 /* レスポンシブ対応************************************/
 @media screen and (max-width: 1165px){
-  /* headerのリンク */
-  header a{
-    display: block;
-  }
   /* 全体 */
   .form-wrapper{
     flex-direction: column;

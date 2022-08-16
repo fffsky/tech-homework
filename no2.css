@@ -1,20 +1,25 @@
 @charset "UTF-8";
-/* headerメニュー ******************************/
-header a {
-  margin: 15px;
-  font-size:  16px;
-  display: block;
-}
 html{
   font-size: 62.5%;
 }
 body {
+    margin: 0;
     background-color: whitesmoke;
+}
+body p{
+  color: #333;
+  font-size: 1.6rem;
 }
 li {
     list-style: none;
 }
 
+/* header部分 *********************************/
+header p{
+  margin: 10px;
+}
+
+/* main部分 ***********************************/
 .container {
     max-width: 1200px;
     text-align: center;
@@ -36,36 +41,8 @@ h3 span {
   color: red;
 }
 
-/* step *********************************/
-.chart {
-  display: flex;
-  align-items: center;
-}
-.step{
-  font-size: 1.6rem;
-}
-.num {
-  font-size: 5.0rem;
-  font-family: "Poppins", sans-serif;
-  margin:0 0 0 5px;
-}
-.step1 {
-  position: absolute;
-  top: 34%;
-  left: 2.5%;
-}
-.step2 {
-  position: absolute;
-  top: 34%;
-  left: 36.5%;
-}
-.step3 {
-  position: absolute;
-  top: 34%;
-  left: 69.5%;
-}
-/* チャート ******************************/
-.wrapper {
+/* チャート *********************************/
+.chart-wrapper {
     display: flex;
     align-items: center;
     padding: 0;
@@ -76,60 +53,79 @@ h3 span {
   margin: 0 auto;
   display: table;
   border-radius: 15px;
-  background: linear-gradient(
-      45deg,
-      #d1f6ff 25%,
-      transparent 25%,
-      transparent 75%,
-      #d1f6ff 75%
-  ),
-  linear-gradient(
-      45deg,
-      #d1f6ff 25%,
-      transparent 25%,
-      transparent 75%,
-      #d1f6ff 75%
-  );
+  background:
+    linear-gradient(45deg,#d1f6ff 25%,transparent 25%,transparent 75%,#d1f6ff 75%),
+    linear-gradient(45deg,#d1f6ff 25%,transparent 25%,transparent 75%,#d1f6ff 75%);
   background-color: #e5f6f7;
   background-size: 24px 24px;
   background-position: 0 0, 12px 12px;
+  position: relative;
+}
+.list::after {
+  position: absolute;
+  content:
+  '→';
+  font-size: 2.0rem;
+  top: 50%;
+  right: -13.5%;
+  transform: translate(-50%,-50%);
+}
+.list:last-child:after {
+  content:'';
 }
 h2 {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 2rem;
-}
-/* レスポンシブ切り替え ****************************/
-.pc {
-  display: block;
-  font-weight: bold;
-  font-size: 1.6rem;
-}
-.sp {
-  display: none;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 2rem;
 }
 
+.chart {
+  display: flex;
+  align-items: center;
+}
+.chart1 {
+  position: absolute;
+  top: -16%;
+  left: 2.5%;
+}
+.chart2 {
+  position: absolute;
+  top: -16%;
+  left: 2.5%;
+}
+.chart3 {
+  position: absolute;
+  top: -16%;
+  left: 2.5%;
+}
+.num {
+  font-size: 5.0rem;
+  font-family: "Poppins", sans-serif;
+  margin:0 0 0 5px;
+}
 
 /* レスポンシブ対応 ******************************/
 @media screen and (max-width: 768px) {
-  header a{
-      display: block;
-      margin: 10px;
-  }
-  .pc {
-    display: none;
-  }
-  .sp {
-    display: block;
-    font-weight: bold;
-    font-size: 1.6rem;
-  }
-
-  /* タイトル ***********************************/
+  /* タイトル */
   h1 {
-    margin-bottom: 58px;
+    margin-bottom: 60px;
   }
-  /* step ***************************************/
+  /* チャート */
+  .chart-wrapper {
+    flex-direction: column;
+  }
+  .list {
+    width: 80%;
+    margin: 15px auto 100px;
+  }
+  .list::after {
+    position: absolute;
+    content:'↓';
+    font-size: 2.0rem;
+    top: 50%;
+    right: -8%;
+    transform: translate(-50% -50%);
+  }
   .step1 {
     position: absolute;
     top: 13%;
@@ -145,12 +141,5 @@ h2 {
     top: 71%;
     left: 13%;
   }
-  /* チャート **************************************/
-  .wrapper {
-    flex-direction: column;
-  }
-  .list {
-    width: 80%;
-    margin: 15px auto;
-  }
+
 }

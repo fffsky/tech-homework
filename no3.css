@@ -1,17 +1,26 @@
 @charset "UTF-8";
-/* headerメニュー ******************************/
-header a {
-  margin: 15px;
-  font-size:  16px;
-  display: block;
+html{
+    font-size: 62.5%;
 }
-li {
-    list-style: none;
+body {
+    margin: 0;
+}
+body p{
+    color: #333;
+    font-size: 1.6rem;
+}
+img{
+    width: 100%;
 }
 
+/* header部分 *********************************/
+header p{
+    margin: 10px;
+}
+/* main部分 ***********************************/
 .container {
     max-width: 1000px;
-    margin-top: 150px;
+    margin: 150px auto;
     position: relative;
 }
 /* background **********************************/
@@ -38,12 +47,12 @@ li {
     left: 33%;
 }
 .title{
-  font-size: 77px;
+  font-size: 6.2rem;
   font-family: "Times New Roman", a-otf-ryumin-pr6n, "ヒラギノ明朝 ProN W3", sans-serif;
   color: #DBD6DF;
   position: absolute;
-  top: 35%;
-  right: 10%;
+  top: 30%;
+  right: 13%;
   z-index: 0;
 }
 /* main *****************************************/
@@ -82,7 +91,7 @@ h2{
   position: relative;
     z-index: 9999;
 }
-p{
+.name p{
   font-size: 12px;
   margin-left: 160px;
   padding-bottom: 30px;
@@ -90,8 +99,27 @@ p{
 
 /* レスポンシブ対応 ******************************/
 @media screen and (max-width: 768px) {
-  header a{
-      display: block;
-      margin: 10px;
+  .wrapper{
+    flex-direction: column;
+  }
+  .image{
+    margin: 0 auto;
+  }
+  .image img{
+    width: 179px;
+    margin: 0 auto;
+  }
+  .diamond{
+    width: 200px;
+    height: 200px;
+  }
+  .txt{
+    margin: 0 auto;
+  }
+  .title{
+    position: absolute;
+    top: -15%;
+    right: 13%;
+    font-size: 4.6rem;
   }
 }

@@ -1,55 +1,67 @@
 @charset "UTF-8";
-/* headerメニュー ******************************/
-header a {
-  margin: 15px;
-  font-size:  16px;
-    display: block;
+html{
+    font-size: 62.5%;
 }
-li {
-    list-style: none;
+body {
+    margin: 0;
 }
+body p{
+    color: #333;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+img{
+    width: 100%;
+}
+
+/* header部分 *********************************/
+header p{
+    margin: 10px;
+}
+
+/* main部分 ***********************************/
 .container {
     max-width: 1000px;
-    margin-top: 100px;
+    margin: 100px auto;
     padding-bottom: 100px;
     position: relative;
 }
-/* 表題****************************************/
+/* タイトル****************************************/
 .txt{
   text-align: center;
 }
 .txt h1{
     margin: 15px;
     letter-spacing: 4px;
+    font-size: 2.2rem;
 }
 .txt p{
-    line-height: 1.8;
+    line-height: 1.6;
     letter-spacing: 1px;
 }
 /* フォーム****************************************/
-select{
-  width: 105%;
-  height: 30px;
-  border-radius: 5px;
-  border: 1px solid lightgray;
-  margin: 5px 0 15px;
-  padding: 60px;
-}
 form{
-    width: 80%;
-    margin: 45px auto 0;
+  width: 80%;
+  margin: 45px auto 0;
 }
 form p{
   font-size: 16px;
   font-weight: bold;
   margin: 0;
-  }
+}
 form span{
   background: #ff6347;
   color: #fff;
   padding: 3px 8px;
   font-size: 12px;
   margin-left: 10px;
+}
+select{
+  width: 105%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin: 5px 0 15px;
+  padding: 10px;
 }
 input{
     width: 100%;
@@ -65,7 +77,6 @@ textarea{
     border-radius: 5px;
     border: 1px solid lightgray;
 }
-/* ボタン****************************************/
 button{
   background: #ff6347;
   color: #fff;
@@ -83,14 +94,7 @@ button{
   width: 80%;
   margin: 59px auto 0;
 }
-.point p{
-  line-height: 1.8;
-}
 @media screen and (max-width: 768px){
-  header a{
-    display: block;
-    margin: 10px;
-  }
   .txt{
     width: 90%;
     margin: 0 auto;

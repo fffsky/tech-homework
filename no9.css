@@ -1,0 +1,85 @@
+@charset "UTF-8";
+html{
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+}
+body p{
+  color: #333;
+  font-size: 1.6rem;
+}
+img{
+  width: 100%;
+}
+
+/* header部分 *********************************/
+header p{
+  margin: 10px;
+}
+/* main部分 ***********************************/
+.container{
+  max-width: 1100px;
+  text-align: center;
+  margin: 100px auto 0;
+}
+.title {
+  margin-bottom: 70px;
+  border-bottom: 2px solid #EDEEEF;
+  padding-bottom: 70px;
+}
+.title h1{
+  font-size: 3.0rem;
+  margin-bottom: 10px;
+}
+.title p{
+  margin: 0;
+  color: #08b086;
+}
+.txt p{
+  line-height: 1.8;
+}
+.txt{
+  margin-bottom: 70px;
+}
+.link{
+  position: relative;
+  width: 33%;
+  margin: 0 auto 100px;
+}
+.link::after{
+  position: absolute;
+  content:'>';
+  color: #08b086;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%,-50%);
+}
+.link a{
+  color: #08b086;
+  font-size: 1.6rem;
+  border: 2px solid;
+  border-radius: 65px;
+  padding: 15px 0;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+@media screen and (max-width:768px) {
+  .title {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+  .txt p{
+    text-align: start;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .link{
+    width: 60%;
+  }
+  .pc{
+    display: none;
+  }
+}
