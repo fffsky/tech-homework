@@ -11,25 +11,15 @@
         <script src="https://kit.fontawesome.com/7ef3657719.js" crossorigin="anonymous"></script>
         <title>404エラー</title>
         <!-- CSS -->
+        <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="no9.css">
     </head>
     <body>
-        <header>
-            <p><a href="no1.html">課題1：CSS完全に理解した</a></p>
-            <p><a href="no2.html">課題2：flow</a></p>
-            <p><a href="no3.html">課題3：Artist</a></p>
-            <p><a href="no4.html">課題4：お問い合わせフォーム</a></p>
-            <p><a href="no5.html">課題5：OUR SERVICES</a></p>
-            <p><a href="no6.html">課題6：よくある質問</a></p>
-            <p><a href="no7.html">課題7：Trial,Download,Contact</a></p>
-            <p><a href="no8.html">課題8：コラム</a></p>
-            <p><a href="no9.html">課題9：404エラー</a></p>
-        </header>
         <main>
             <section>
                 <div class="container">
                     <div class="title">
-                        <h1>404 NOT FOUND</h1>
+                        <h1 class="TextTyping">404 NOT FOUND・・・・・</h1>
                         <p>お探しのページが見つかりませんでした。</p>
                     </div>
                     <div class="txt">
@@ -44,5 +34,64 @@
                 </div>
             </section>
         </main>
+
+        <!-- タイピングScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script>
+            // TextTypingというクラス名がついている子要素（span）を表示から非表示にする定義
+            function TextTypingAnime() {
+                $('.TextTyping').each(function () {
+                    var elemPos = $(this).offset().top - 50;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    var thisChild = "";
+                    if (scroll >= elemPos - windowHeight) {
+                        thisChild = $(this).children(); //spanタグを取得
+                        //spanタグの要素の１つ１つ処理を追加
+                        thisChild.each(function (i) {
+                            var time = 130;
+                            //時差で表示する為にdelayを指定しその時間後にfadeInで表示させる
+                            $(this).delay(time * i).fadeIn(time);
+                        });
+                    } else {
+                        thisChild = $(this).children();
+                        thisChild.each(function () {
+                            $(this).stop(); //delay処理を止める
+                            $(this).css("display", "none"); //spanタグ非表示
+                        });
+                    }
+                });
+            }
+        // 画面が読み込まれたらすぐに動かしたい場合の記述
+        $(window).on('load', function () {
+            //spanタグを追加する
+            var element = $(".TextTyping");
+            element.each(function () {
+                var text = $(this).html();
+                var textbox = "";
+                text.split('').forEach(function (t) {
+                    if (t !== " ") {
+                        textbox += '<span>' + t + '</span>';
+                    } else {
+                        textbox += t;
+                    }
+                });
+                $(this).html(textbox);
+            });
+            TextTypingAnime();
+            /* アニメーション用の関数を呼ぶ*/
+        });
+    </script>
     </body>
+    <footer>
+        <p><a href="no1.html">課題1：CSS完全に理解した</a></p>
+        <p><a href="no2.html">課題2：flow</a></p>
+        <p><a href="no3.html">課題3：Artist</a></p>
+        <p><a href="no4.html">課題4：お問い合わせフォーム</a></p>
+        <p><a href="no5.html">課題5：OUR SERVICES</a></p>
+        <p><a href="no6.html">課題6：よくある質問</a></p>
+        <p><a href="no7.html">課題7：Trial,Download,Contact</a></p>
+        <p><a href="no8.html">課題8：コラム</a></p>
+        <p><a href="no9.html">課題9：404エラー</a></p>
+    </footer>
 </html>

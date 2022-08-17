@@ -12,12 +12,6 @@ body p{
 img{
     width: 100%;
 }
-
-/* header部分 *********************************/
-header p{
-    margin: 10px;
-}
-
 /* main部分 ***********************************/
 .container{
     width: 160px;

@@ -13,17 +13,11 @@ body p{
 li {
     list-style: none;
 }
-
-/* header部分 *********************************/
-header p{
-  margin: 10px;
-}
-
 /* main部分 ***********************************/
 .container {
     max-width: 1200px;
     text-align: center;
-    margin: 70px auto;
+    margin: 100px auto;
     position: relative;
 }
 

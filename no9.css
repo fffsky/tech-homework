@@ -6,22 +6,17 @@ body {
   margin: 0;
 }
 body p{
-  color: #333;
+  /* color: #333; */
   font-size: 1.6rem;
 }
 img{
   width: 100%;
 }
-
-/* header部分 *********************************/
-header p{
-  margin: 10px;
-}
 /* main部分 ***********************************/
 .container{
   max-width: 1100px;
   text-align: center;
-  margin: 100px auto 0;
+  margin: 100px auto;
 }
 .title {
   margin-bottom: 70px;
@@ -67,7 +62,38 @@ header p{
   text-decoration: none;
   display: block;
 }
+.link:hover{
+  background-color: #08b086;
+  border-radius: 65px;
+}
+.link:hover a{
+  color: #fff;
+  border: 2px solid;
 
+}
+.link:hover::after{
+
+  color: #fff;
+
+}
+
+/* タイピング ***********************/
+
+.TextTyping span {
+  display: none;
+}
+/* 文字列後ろの線の設定 */
+.TextTyping::after {
+  content: "|";
+  animation: typinganime 0.8s ease infinite;
+}
+
+@keyframes typinganime{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+/* レスポンシブ   *******************************/
 @media screen and (max-width:768px) {
   .title {
     margin-bottom: 40px;
