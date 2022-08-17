@@ -20,7 +20,6 @@ li {
     margin: 100px auto;
     position: relative;
 }
-
 /* タイトル ******************************/
 h1 {
   margin-bottom: 80px;
@@ -34,7 +33,6 @@ h3 {
 h3 span {
   color: red;
 }
-
 /* チャート *********************************/
 .chart-wrapper {
     display: flex;
@@ -72,7 +70,6 @@ h2 {
   vertical-align: middle;
   font-size: 2rem;
 }
-
 .chart {
   display: flex;
   align-items: center;
@@ -97,7 +94,6 @@ h2 {
   font-family: "Poppins", sans-serif;
   margin:0 0 0 5px;
 }
-
 /* レスポンシブ対応 ******************************/
 @media screen and (max-width: 768px) {
   /* タイトル */
@@ -135,5 +131,4 @@ h2 {
     top: 71%;
     left: 13%;
   }
-
 }

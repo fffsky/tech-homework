@@ -76,6 +76,7 @@ select::-ms-expand {
   font-weight: bold;
   margin: 0 25px;
 }
+
 /* レスポンシブ対応************************************/
 @media screen and (max-width: 765px){
   /* メイン */

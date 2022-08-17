@@ -78,6 +78,7 @@ hr {
   border: none;
   background-color: rgb(97,98,226,0.6);
 }
+
 /* レスポンシブ対応************************************/
 @media screen and (max-width: 768px){
   .item-list{

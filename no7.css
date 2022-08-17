@@ -34,7 +34,6 @@ main{
   display: flex;
   align-items: flex-start; /* 高さは上に統一*/
   width: 100%;
-
 }
 /* 左右コンテンツの幅を指定 */
 .trial-download{
@@ -44,7 +43,6 @@ main{
 .contact{
   width: 50%;
 }
-
 /* トライアルとダウンロード部分の指定 */
 .trial-download-item{
   display: flex;
@@ -73,7 +71,6 @@ h3{
   margin: 0;
   color: #fff;
 }
-
 /* コンタクト部分の指定 */
 .contact-wrapper{ /*テキスト部分を左右*/
   display: flex;
@@ -93,7 +90,6 @@ h3{
   margin: 0;
   padding: 0 5px 0 0;
 }
-
 /* リンクの指定 */
 .trial-download-link{
   width: 70%;
@@ -118,6 +114,7 @@ h3{
 .fa-solid{
   margin-right: 7px;
 }
+
 /* レスポンシブ対応************************************/
 @media screen and (max-width: 1165px){
   /* 全体 */
@@ -199,6 +196,7 @@ h3{
     margin: 0 auto;
   }
 }
+
 /* レスポンシブ対応************************************/
 @media screen and (max-width: 647px){
   /* トライアルとダウンロードのコンテンツ */

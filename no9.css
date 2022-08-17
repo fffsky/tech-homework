@@ -69,16 +69,11 @@ img{
 .link:hover a{
   color: #fff;
   border: 2px solid;
-
 }
 .link:hover::after{
-
   color: #fff;
-
 }
-
 /* タイピング ***********************/
-
 .TextTyping span {
   display: none;
 }
@@ -87,7 +82,6 @@ img{
   content: "|";
   animation: typinganime 0.8s ease infinite;
 }
-
 @keyframes typinganime{
   from{opacity:0}
   to{opacity:1}
