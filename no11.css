@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+}
+body p {
+  font-size: 1.6rem;
+}
+img {
+  width: 100%;
+}
+a{
+  text-decoration : none;
+}
+
+/* 背景画像 */
+.fv {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 520px;
+  object-fit: cover;
+  object-position: center 5%;
+}
+.mask{
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: none;
+  height: 520px;
+}
+
+/* メニュー */
+header{
+  border-bottom: 0.5px solid #44403F;
+}
+nav{
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+nav,.menu-list{
+  display: flex;
+  justify-content: space-between;
+}
+li{
+  list-style: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+li a{
+  font-size: 1.3rem;
+  color: #fff;
+}
+.menu-item li:last-child{
+  background: #40B1D0;
+  border-radius: 5px;
+}
+
+/* main */
+#main{
+  margin: 100px 0;
+}
+h1{
+  font-size: 3.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+#main p{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 35px;
+}
+#main a{
+  background: #40B1D0;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+/* レスポンシブ */
+@media screen and (max-width:1005px) {
+  .sp{
+    display: none;
+  }
+}
+@media screen and (max-width:760px) {
+  .menu-list {
+    padding: 10px 15px;
+    }
+  .menu-list li{
+    margin: 0;
+    padding: 0%;
+  }
+  .menu-list img{
+    width: 80%;
+  }
+}
+@media screen and (max-width:485px) {
+  h1{
+    font-size: 2.5rem;
+  }
+}
