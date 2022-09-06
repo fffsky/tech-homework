@@ -90,6 +90,9 @@ h1{
 
 /* レスポンシブ */
 @media screen and (max-width:1100px) {
+  header{
+   border: 0px;
+  }
   .sp{
     display: block;
   }
