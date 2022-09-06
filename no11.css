@@ -53,7 +53,7 @@ header{
 .nav-items li:last-child{
   background: #40B1D0;
   border-radius: 5px;
-  padding: 5px 5px;
+  padding: 5px 0px;
 }
 .nav-items-item a{
   font-size: 1.3rem;
@@ -91,7 +91,7 @@ h1{
 /* レスポンシブ */
 @media screen and (max-width:1100px) {
   header{
-   border: 0px;
+    border: 0px;
   }
   .sp{
     display: block;
