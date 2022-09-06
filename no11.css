@@ -17,6 +17,8 @@ a{
 }
 li{
   list-style: none;
+}.container{
+  overflow: hidden;
 }
 /* 背景画像 */
 .fv {
