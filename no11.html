@@ -16,22 +16,33 @@
     </head>
     <body>
         <div class="container">
-            <img class="fv" src="img/no11-2.jpg" alt="">
+            <!-- 背景 -->
+            <img class="fv" src="img/no11-2.jpg" alt="背景">
             <div class="mask">
+                <!-- ヘッダー -->
                 <header>
-                    <nav>
-                        <ul class="menu-list">
-                            <li><img src="img/no11-1.svg" alt=""></li>
-                        </ul>
-                        <ul class="menu-list menu-item sp">
-                            <li><a href="#">PRICING</a></li>
-                            <li><a href="#">FEATURES</a></li>
-                            <li><a href="#">TRY FOR FREE</a></li>
-                            <li><a href="#">WORDPRESS PLUGIN</a></li>
-                            <li><a href="#">MY ACCOUNT</a></li>
-                            <li><a href="#">GET STARTED</a></li>
-                        </ul>
-                    </nav>
+                    <div class="header-inner">
+                        <h1>
+                            <img src="img/no11-1.svg" alt="サイトロゴ">
+                        </h1>
+                        <!-- メニューリスト -->
+                        <nav class="header-nav nav" id="js-nav">
+                            <ul class="nav-list nav-items">
+                                <li class="nav-items-item"><a href="">PRICING</a></li>
+                                <li class="nav-items-item"><a href="">FEATURES</a></li>
+                                <li class="nav-items-item"><a href="">TRY FOR FREE</a></li>
+                                <li class="nav-items-item"><a href="">WORDPRESS PLUGIN</a></li>
+                                <li class="nav-items-item"><a href="">MY ACCOUNT</a></li>
+                                <li class="nav-items-item"><a href="">GET STARTED</a></li>
+                            </ul>
+                        </nav>
+                        <!-- ハンバーガーメニューボタン -->
+                        <button class="sp header-hamburger hamburger" id="js-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </header>
                 <main>
                     <section id="main">
@@ -55,5 +66,15 @@
             <p><a href="no10.html">課題10：サポートコンテンツ</a></p>
             <p><a href="no11.html">課題11：IMAGIFY</a></p>
         </footer>
+        <script>
+            const ham = document.querySelector('#js-hamburger'); //js-hamburgerの要素を取得し、変数hamに格納
+            const nav = document.querySelector('#js-nav'); //js-navの要素を取得し、変数navに格納
+
+            ham.addEventListener('click', function () { //ハンバーガーメニューをクリックしたら
+                ham.classList.toggle('active'); // ハンバーガーメニューにactiveクラスを付け外し
+                nav.classList.toggle('active'); // ナビゲーションメニューにactiveクラスを付け外し
+
+            });
+        </script>
     </body>
 </html>
