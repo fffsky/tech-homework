@@ -34,6 +34,7 @@ main{
 .title h1{
   font-size: 3.0rem;
   margin-bottom: 0;
+  padding: 0 20px;
 }
 .title p{
   color: #87CADD;
