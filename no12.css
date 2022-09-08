@@ -84,24 +84,29 @@ main{
 }
 .item-sub-text{
   padding-left: 20px;
-  position: relative;
 }
-.item-sub .item-sub-text .icon{
+.item-sub-name::before{
+  content:'';
+  display: inline-block;
+  top: -3px;
+  left: -3px;
   width: 30px;
   height: 30px;
-  border-radius: inherit;
+  background-image: url(img/no12-5.png);
+  background-size: contain;
+  vertical-align: middle;
+  background-repeat: no-repeat;
   position: absolute;
-  top:0%;
-  left: 4%;
 }
 .item-sub-name{
-  padding-left: 10%;
+  padding-left: 40px;
   margin: 0;
   font-size: 2.0rem;
   font-weight: bold;
+  position: relative;
 }
 .item-sub-date{
-  padding-left: 10%;
+  padding-left: 40px;
     margin: 0 0 15px;
     color: #97A0A7;
     font-size: 1.2rem;
@@ -121,7 +126,7 @@ main{
   }
   /* 人物（左） */
   .item-main-detail{
-    padding: 0 60px;
+    padding: 0 30px;
   }
     /* 人物（右） */
   .item-sub{
@@ -137,18 +142,30 @@ main{
     width: 80%;
     margin: 0 auto;
   }
-  .item-sub .item-sub-text .icon{
-    left: 24%;
-    top: 6%;
+  .item-sub-name::before{
+    content:'';
+    display: inline-block;
+    top: 8px;
+    left: -55px;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/no12-5.png);
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    position: absolute;
   }
+
   .item-sub-name{
     padding: 0;
+    display: inline;
+    position: relative;
   }
   .item-sub-date{
     padding: 0;
   }
   .item-sub-detail{
-    padding: 0 60px;
+    padding: 0 30px;
   }
 
 }
