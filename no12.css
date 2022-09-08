@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+}
+body p {
+  font-size: 1.6rem;
+}
+img {
+  width: 100%;
+}
+a{
+  text-decoration : none;
+}
+li{
+  list-style: none;
+}
+/* 背景色 */
+main{
+  background: #F3F5F7;
+}
+.container{
+  padding: 100px 0 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* タイトル */
+.title{
+  text-align: center;
+}
+.title h1{
+  font-size: 3.0rem;
+  margin-bottom: 0;
+}
+.title p{
+  color: #87CADD;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+/* アイテムリスト */
+.item-list{
+  display: flex;
+  justify-content: center;
+}
+/* アイテム */
+.item{
+  width: 50%;
+  margin-bottom: 30px;
+}
+/* 人物（左） */
+.item-main{
+  text-align: center;
+}
+.item-main img{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.item-main-name{
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.item-main-detail{
+  padding: 0 85px;
+  font-size: 1.4rem;
+}
+/* 人物（右） */
+.item-sub{
+  display: flex;
+  margin-bottom: 40px;
+}
+.item-sub img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.item-sub-text{
+  padding-left: 20px;
+  position: relative;
+}
+.item-sub .item-sub-text .icon{
+  width: 30px;
+  height: 30px;
+  border-radius: inherit;
+  position: absolute;
+  top:0%;
+  left: 4%;
+}
+.item-sub-name{
+  padding-left: 10%;
+  margin: 0;
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+.item-sub-date{
+  padding-left: 10%;
+    margin: 0 0 15px;
+    color: #97A0A7;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.item-sub-detail{
+  padding-right: 50px;
+  font-size: 1.4rem;
+}
+@media screen and (max-width:768px){
+  .item-list{
+    flex-direction: column;
+  }
+  .item{
+    width: 80%;
+    margin: 0 auto 50px;
+  }
+  /* 人物（左） */
+  .item-main-detail{
+    padding: 0 60px;
+  }
+    /* 人物（右） */
+  .item-sub{
+    flex-direction: column;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .item-sub img{
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .item-text{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .item-sub .item-sub-text .icon{
+    left: 24%;
+    top: 6%;
+  }
+  .item-sub-name{
+    padding: 0;
+  }
+  .item-sub-date{
+    padding: 0;
+  }
+  .item-sub-detail{
+    padding: 0 60px;
+  }
+
+}
