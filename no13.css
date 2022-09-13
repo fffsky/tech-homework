@@ -52,8 +52,8 @@ li{
 }
 .item img{
   border-radius: 50%;
-  height: 165px;
-  width: 165px;
+  height: 180px;
+  width: 180px;
   border: 1px solid;
   object-fit: cover;
 }
@@ -93,6 +93,9 @@ li{
   .item img{
     display: block;
     margin: 0 auto;
+  }
+  .num{
+    font-size: 1.4rem;
   }
   .txt{
     padding-right: 0px;
