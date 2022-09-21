@@ -46,7 +46,6 @@ li{
   border-bottom: 2px solid #EDF0F0;
   padding-bottom: 15px;
   margin-left: 40px;
-  letter-spacing: 1px;
 }
 .q-list p::before{
   position: absolute;
@@ -64,7 +63,7 @@ li{
 .button a{
   display: inline-block;
   margin-top: 30px;
-  border: 3px #333 solid;
+  border: 2px #333 solid;
   padding: 10px 45px 10px 25px;
   color: #333;
   position: relative;
