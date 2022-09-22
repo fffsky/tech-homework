@@ -70,10 +70,11 @@ li{
 }
 .button a span{
   color: #009655;
-  font-size: 2.5rem;
+  font-size: 2rem;
   position: absolute;
-  top: 4px;
+  top: 50%;
   right: 11px;
+  transform: translate(-11px,-50%);
   font-family: 'Merriweather', serif;
 }
 .button a:hover{
