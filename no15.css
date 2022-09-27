@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+p,a,li,strong,table{
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+a{
+  text-decoration : none;
+}
+li{
+  list-style: none;
+}
+/* 全体 */
+.container{
+  width: 95%;
+  margin: 80px auto 100px;
+}
+/* タイトル */
+.title p{
+  font-size: 1.3rem;
+  margin-bottom: 35px;
+  text-align: center;
+  position: relative;
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
+}
+.title p::after{
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  content: '';
+  width: 29px;
+  height: 4px;
+  background-color: #277DE1;
+}
+.title h1{
+  font-size: 3.3rem;
+    margin: 0 0 35px;
+    text-align: center;
+}
+/* 注釈 */
+.point{
+  text-align: center;
+}
+/* 表 */
+.table{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table p:first-child{
+  background: #F5F7F9;
+  width: 130px;
+  height: 33px;
+  text-align: center;
+  padding: 20px 15px;
+  border: 3px solid #EEF1F0;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+.table p:last-child{
+  width: 615px;
+  height: 33px;
+  text-align: start;
+  padding: 20px 15px;
+  border: 3px solid #EEF1F0;
+  border-bottom: 0px;
+}
+.table:last-child p{
+  border-bottom: 3px solid #EEF1F0;
+}
+/* 表2*/
+table{
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.table2 th{
+  background: #F5F7F9;
+  width: 130px;
+  height: 33px;
+  border: 3px solid #EEF1F0;
+  text-align: center;
+  padding: 20px 15px;
+}
+.table2 td{
+  width: 615px;
+  height: 33px;
+  border: 3px solid #EEF1F0;
+  text-align: start;
+  padding: 20px 15px;
+}
+@media screen and (max-width:500px) {
+  /* 表2 */
+  table, .table p{
+    font-size: 1.3rem;
+  }
+}
