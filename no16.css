@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: none;
 }
 p,a,li,strong,table{
   font-size: 1.6rem;
@@ -32,7 +33,6 @@ li{
 .title h1{
   font-size: 3.3rem;
   font-weight: bold;
-  margin-bottom: 30px;
   text-align: center;
 }
 /* コンテンツ */
