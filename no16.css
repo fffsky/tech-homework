@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: none;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 p,a,li,strong,table{
   font-size: 1.6rem;
