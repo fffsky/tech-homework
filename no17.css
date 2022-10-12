@@ -234,24 +234,23 @@ h1 a {
   .btn {
     display: flex;
     width: calc(100% - 60px);
-    margin-bottom: 30px;
+    margin: 0 auto ;
     padding: 30px;
   }
 
   .btn1,
   .btn2,
   .btn3 {
-    width: fit-content;
     margin: 0 10px 0 0;
   }
 
   .btn1 {
     padding: 10px 0;
-    width: 40%;
+    width: 54%;
   }
 
   .btn-flex {
-    width: 60%;
+    width: 56%;
   }
 
   .btn2,
@@ -298,7 +297,7 @@ h1 a {
   /* icon *****/
   .fa-envelope,
   .fa-file-arrow-down {
-    margin-bottom: 7px;
+    margin: 0 0 7px;
   }
 
   /* 下部メニュー **************/
