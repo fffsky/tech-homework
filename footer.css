@@ -6,4 +6,5 @@ footer p{
 footer a{
   text-decoration: underline;
   font-weight: 100;
+  color: #333;
 }
