@@ -30,12 +30,18 @@ ul,li {
   margin: 40px auto;
   padding: 40px 0;
 }
+/* 背景 */
 .bg{
   background-image: url(img/no18.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+.mask{
+  background-color: rgba(0,0,0,0.7);
+    backdrop-filter: none;
+}
+/* メニュー */
 nav ul{
   writing-mode: vertical-rl;
     display: block;
@@ -45,6 +51,7 @@ nav ul li{
   margin: 0 55px;
   color: #fff;
 }
+/* プライバシーポリシー */
 .privacy{
   display: flex;
   justify-content: center;
@@ -56,14 +63,12 @@ nav ul li{
   margin: 0 20px;
   color: #fff;
 }
+/* フッター */
 .footer{
   text-align: center;
   color: #fff;
 }
-.mask{
-  background-color: rgba(0,0,0,0.7);
-    backdrop-filter: none;
-}
+/* ロゴ */
 .logo{
   width: 110px;
   margin: 30px auto 50px;
@@ -72,10 +77,6 @@ nav ul li{
 .flex{
   display: flex;
   justify-content: space-between;
-}
-.name,.place{
-  text-align: center;
-  color: #fff;
 }
 .flex p{
   color: #fff;
@@ -86,6 +87,10 @@ nav ul li{
 }
 .flex2{
   margin-bottom: 10px;
+}
+.name,.place{
+  text-align: center;
+  color: #fff;
 }
 .maru{
   position: absolute;
