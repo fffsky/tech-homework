@@ -70,13 +70,14 @@ nav ul li{
 }
 /* ロゴ */
 .logo{
-  width: 110px;
-  margin: 30px auto 50px;
+  width: 100px;
+  margin: 50px auto 50px;
   position: relative;
 }
 .flex{
   display: flex;
   justify-content: space-between;
+  font-size: 1.5rem;
 }
 .flex p{
   color: #fff;
@@ -91,6 +92,7 @@ nav ul li{
 .name,.place{
   text-align: center;
   color: #fff;
+  line-height: 1;
 }
 .maru{
   position: absolute;
@@ -98,7 +100,7 @@ nav ul li{
   height: 70px;
   border-radius: 50%;
   border: 5px solid #fff;
-  top: 50%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
