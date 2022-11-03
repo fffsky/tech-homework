@@ -25,16 +25,17 @@ li {
 ul,li {
   padding: 0;
 }
-/* 全体    **************************************************/
-
+/* 全体    ***************************************************/
 .container{
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 30px 0 80px;
 }
+/* タイトル **************************************************/
 .title{
   text-align: center;
 }
+/* コンテンツ ************************************************/
 .list{
   display: flex;
   flex-wrap: wrap;
@@ -43,9 +44,9 @@ ul,li {
 }
 .item{
   width: 40%;
-  margin: 30px;
+  margin: 10px 12px;
   padding-top: 20px;
-  box-shadow: 0px 10px 10px 3px rgb(0 0 0 / 20%);
+  box-shadow: 0px 10px 10px 3px rgb(0 0 0 / 8%);
 }
 .item-img{
   display: flex;
@@ -56,21 +57,24 @@ ul,li {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  border: 1px solid rgb(0 0 0 / 20%);
 }
 .item-name{
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .name{
   font-size: 1.4rem;
+  color: #4C4C4C;
 }
 .office{
   font-size: 1.1rem;
+  color: #B7B7C6;
 }
 .txt{
   padding: 20px;
   height: 75px;
 }
-
+/* レスポンシブ **********************************************/
 @media screen and (max-width:768px) {
   .title{
     margin-bottom: 30px;
@@ -91,6 +95,6 @@ ul,li {
   }
   .txt{
     padding: 30px;
-    height: 50px;
+    height: auto;
   }
 }
