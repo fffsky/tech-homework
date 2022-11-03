@@ -57,7 +57,7 @@ ul,li {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  border: 1px solid rgb(0 0 0 / 20%);
+  background-color: rgb(0 0 0 / 20%);
 }
 .item-name{
   margin-left: 15px;
@@ -73,6 +73,12 @@ ul,li {
 .txt{
   padding: 20px;
   height: 75px;
+}
+.txt2{
+  font-size: 2.0rem;
+}
+.txt4{
+  font-size: 1.8rem;
 }
 /* レスポンシブ **********************************************/
 @media screen and (max-width:768px) {
