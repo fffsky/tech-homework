@@ -27,7 +27,7 @@ ul,li {
 }
 /* 全体    ***************************************************/
 .container{
-  max-width: 770px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 30px 0 80px;
 }
@@ -36,6 +36,10 @@ ul,li {
   text-align: center;
 }
 /* コンテンツ ************************************************/
+.wrapper{
+  max-width: 770px;
+  margin: 0 auto;
+}
 .list{
   display: grid;
   grid-template-columns: repeat(2, 1fr) ;
