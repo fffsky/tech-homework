@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #5e5e5e;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul,
+li {
+  padding: 0;
+}
+
+/* 全体    ***************************************************/
+main {
+  background-color: #F1F1F1;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0 80px;
+}
+
+/* タイトル **************************************************/
+
+/* 吹き出し */
+.comment {
+  font-size: 2.8rem;
+  color: #0A2E5A;
+  border: 2px solid #0A2E5A;
+  width: fit-content;
+  padding: 12px 72px;
+  margin: 0 auto 40px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.comment span {
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  content: '';
+  background-color: #F1F1F1;
+}
+
+.dott1 {
+  top: 2%;
+  left: 2%;
+  transform: rotate(48deg);
+}
+
+.dott2 {
+  top: -7%;
+  left: 27%;
+  transform: rotate(90deg);
+}
+
+.dott3 {
+  top: -7%;
+  left: 58%;
+  transform: rotate(90deg);
+}
+
+.dott4 {
+  top: -7%;
+  left: 86%;
+  transform: rotate(90deg);
+}
+
+.dott5 {
+  top: 97%;
+  left: 92%;
+  transform: rotate(90deg)
+}
+
+.dott6 {
+  top: 97%;
+  left: 66%;
+  transform: rotate(90deg)
+}
+
+.dott7 {
+  top: 97%;
+  left: 14%;
+  transform: rotate(90deg)
+}
+
+.dott8 {
+  top: 97%;
+  left: 92%;
+  transform: rotate(90deg)
+}
+
+.triangle {
+  position: absolute;
+  top: 100%;
+  left: 47%;
+  transform: translateX(-50%) rotate(2deg);
+}
+
+.triangle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 30px solid #0A2E5A;
+  border-right: 24px solid transparent;
+}
+
+.triangle::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 3px;
+  border-top: 30px solid #F1F1F1;
+  border-right: 24px solid transparent;
+}
+
+/* メインタイトル */
+.title h1 {
+  text-align: center;
+  color: #0A2E5A;
+  font-size: 4.0rem;
+}
+
+/* PCR/花粉 */
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.check p {
+  text-align: center;
+  background-color: #fff;
+  padding: 15px 55px;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  color: #0A2E5A;
+  width: 90px;
+  margin: 0 15px;
+}
+
+/* 男女別 */
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  width: 45%;
+  margin: 0 15px;
+  background-color: #fff;
+  padding-bottom: 25px;
+  border-radius: 5px;
+}
+
+.item-title {
+  text-align: center;
+  padding: 25px 0;
+  font-size: 2.3rem;
+}
+
+.women,.men {
+  display: grid;
+  grid-gap: 7px 0px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  padding: 0px 12%;
+}
+
+.item-title-men {
+  color: #4A9DEC;
+}
+
+.item-title-women {
+  color: #EF7CA8;
+}
+
+.men p,.women p {
+  padding: 17px 26px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: #0A2E5A;
+}
+
+.women p {
+  background-color: #F8D6E3;
+}
+
+.men p {
+  background-color: #CFE6FC;
+}
+
+.fa-solid {
+  margin-right: 15px;
+  font-size: 3.5rem;
+}
+
+
+@media screen and (max-width:768px) {
+  .comment {
+    font-size: 1.8rem;
+    padding: 10px 24px;
+  }
+
+  .title h1 {
+    font-size: 2.0rem;
+    margin-bottom: 30px;
+  }
+
+  .check p {
+    padding: 15px 35px;
+    margin: 0 8px;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+
+  .women p,
+  .men p {
+    padding: 15px 19px;
+  }
+}
